@@ -1,4 +1,7 @@
-# 🥃 Whiskey Whiskey Whiskey _WWW_
+# [nztstudios.com](https://nztstudios.com/) 📽📡💻 
+
+
+This site was made with 🥃 Whiskey Whiskey Whiskey _WWW_
 Website boilerplate to create static webpages for the World Wide Web.
 
 ## Stack
@@ -10,20 +13,6 @@ Website boilerplate to create static webpages for the World Wide Web.
 ## Libraries incluided
 - **[Bulma](https://bulma.io/)** As a CSS Framework
 - **[Swiper](https://swiperjs.com/)** Javascript Slider
-
-## File Structure
-```bash
-src
-+-- fonts
-+-- html # Here we create our website structure
-|   +-- _resources # Files here are merely for template purposes
-+-- images
-+-- js
-|   +-- app.js # This file will become the final .js file
-+-- scss # SCSS Style folder
-|   +-- main.scss # This file will become the final .css stylsheet
-+-- gulpfile.js # Gulp file with the required tasks
-```
 
 ## Important Gulp tasks
 To build the required files just run
