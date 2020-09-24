@@ -1,0 +1,31 @@
+<header>
+    <div class="container">
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <a href="/" class="navbar-item">
+                    <img src="https://placehold.it/112x28?text=Whiskey" width="112" height="28">
+                </a>
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="#">Whiskey</a>
+                    <a class="navbar-item" href="#">Whiskey</a>
+                </div>
+                <div class="navbar-end">
+                    {% include "social-media.twig" with {
+                            social_link_class: 'navbar-item social-item',
+                            facebook: 'https://facebook.com',
+                            twitter: 'https://twitter.com',
+                            linkedin: 'https://linkedin.com'
+                        }
+                    %}
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>

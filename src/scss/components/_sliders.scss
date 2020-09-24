@@ -1,0 +1,42 @@
+#homeSlider {
+    .swiper-wrapper {
+        height: auto;
+    }
+    .swiper-button {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        z-index: 2;
+        width: 2.5rem;
+        height: 2.5rem;
+        padding: 0.5rem;
+        border-radius: 2.5rem;
+        text-align: center;
+        color: #fff;
+        background-color: rgba(255,255,255,.25);
+        cursor: pointer;
+        svg {
+            fill: currentColor;
+            width: 1.5rem;
+        }
+        &-prev {
+            left: 1rem;
+            svg {
+                margin-left: -0.25rem;
+            }
+        }
+        &-next {
+            right: 1rem;
+            svg {
+                margin-right: -0.25rem;
+            }
+        }
+        &-disabled {
+            display: none;
+        }
+        &:hover {
+            background-color: rgba(255,255,255,.45);
+        }
+    }
+}

@@ -1,0 +1,91 @@
+$colors: #040ABF, #0644D6, #0675CC;
+
+// $colors1: red, orange, yellow, green, blue, violet, purple ;
+// $colors2: orange, yellow, green, blue, violet, purple, red ;
+// $colors3: yellow, green, blue, violet, purple, red, orange ;
+// $colors4: green, blue, violet, purple,  red, orange, yellow ;
+// $colors5: blue, violet, purple, red, orange, yellow, green ;
+// $colors6: violet, purple, red, orange, yellow, green, blue ;
+// $colors7: purple, red, orange, yellow, green, blue, violet ;
+
+
+// @keyframes rainbow {
+//     0% { @include colorShadow($colors1, $sizeX: 20px, $sizeY: 10px, $directionX: 'right'); }
+//     14% { @include colorShadow($colors2, $sizeX: 20px, $sizeY: 10px, $directionX: 'right'); }
+//     28% { @include colorShadow($colors3, $sizeX: 20px, $sizeY: 10px, $directionX: 'right'); }
+//     42% { @include colorShadow($colors4, $sizeX: 20px, $sizeY: 10px, $directionX: 'right'); }
+//     56% { @include colorShadow($colors5, $sizeX: 20px, $sizeY: 10px, $directionX: 'right'); }
+//     70% { @include colorShadow($colors6, $sizeX: 20px, $sizeY: 10px, $directionX: 'right'); }
+//     84% { @include colorShadow($colors7, $sizeX: 20px, $sizeY: 10px, $directionX: 'right'); }
+//     100% { @include colorShadow($colors, $sizeX: 20px, $sizeY: 10px, $directionX: 'right'); }
+// }
+
+.services-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    gap: 30px 50px;
+    position: relative;
+
+    .img-service {
+        height: 300px;
+        width: 100%;
+        position: relative;
+
+        &.flecha {
+            display: block;
+            transition: all ease-in-out 150ms;
+
+            &.right {
+                &:hover {
+                    @include colorShadow($colors, $sizeX: 10px, $sizeY: 8px, $directionX: 'right');
+                    .flecha-inner {
+                        transform: translate(5px);
+                        filter: sepia(.5);
+                    }
+                }
+            }
+            &.left {
+                &:hover {
+                    @include colorShadow($colors, $sizeX: 10px, $sizeY: 8px, $directionX: 'left');
+                    .flecha-inner {
+                        transform: translate(5px);
+                        filter: sepia(.5);
+                    }
+                }
+
+            }
+
+            .flecha-inner {
+                transition: all ease-in-out 150ms;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                &.right {
+                    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+                }
+                &.left {
+                    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+                }
+            }
+        }
+    }
+
+    .data-service {
+        padding: 1rem;
+        color: black;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h2 {
+            font-size: 3rem;
+            font-weight: 600;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+    }
+}

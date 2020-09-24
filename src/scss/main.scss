@@ -1,0 +1,23 @@
+// Mixins & Variables
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+@import 'abstracts/animations';
+
+// Librerias & Tipografías
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import 'bulma/bulma.sass';
+@import 'swiper/swiper';
+
+// Partials
+@import 'partials/header';
+@import 'partials/footer';
+
+// Components
+@import 'components/sliders';
+@import 'components/social-media';
+@import 'components/hero';
+@import 'components/services';
+@import 'components/aboutUs';
+
+// Secciones
+@import 'sections/general';

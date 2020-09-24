@@ -1,0 +1,32 @@
+@keyframes carucha {
+    from {filter: drop-shadow(-1px -1px red) drop-shadow(1px 1px blue);}
+    to {filter: drop-shadow(1px 1px red) drop-shadow(-1px -1px blue);}
+}
+
+@keyframes glitch1 {
+    0% { left: 1px; top: 0; }
+    10% { left: 0px; top: 1px; }
+    20% { left: -1px; top: 0px; opacity: .5;}
+    30% { left: 0px; top: -1px; }
+    40% { left: 1px; top: 0px;; }
+    50% { left: 2px; top: 1px; }
+    60% { left: -1px; top: 0px; }
+    70% { left: 0px; top: -1px; opacity: .5;}
+    80% { left: 1px; top: 0px; }
+    90% { left: 0px; top: 2px; opacity: .5;}
+    100% { left: -2px; top: 0px; }
+}
+
+@keyframes glitch2 {
+    0% { top: 1px; left: 0; opacity: .5;}
+    10% { top: 0px; left: 1px; }
+    20% { top: -2px; left: 0px; }
+    30% { top: 0px; left: -1px; opacity: .5;}
+    40% { top: 1px; left: 0px;; }
+    50% { top: 0px; left: 1px; opacity: .5;}
+    60% { top: -1px; left: 2px; }
+    70% { top: 0px; left: -1px; }
+    80% { top: 1px; left: 0px; opacity: .5;}
+    90% { top: 0px; left: 1px; }
+    100% { top: -1px; left: 0px; }
+}

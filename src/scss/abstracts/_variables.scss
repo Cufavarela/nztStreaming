@@ -1,0 +1,14 @@
+$primary: hsl(40, 100%, 42%);
+$secondary: #6693ad;
+$light: #f1faee;
+
+$link: $primary;
+
+$scheme-main-bis: $secondary;
+
+// Navbar
+$navbar-background-color: lighten($primary, 20);
+$navbar-item-hover-background-color: $primary;
+$navbar-item-hover-color: #fff;
+
+$main-font-family: 'Montserrat';

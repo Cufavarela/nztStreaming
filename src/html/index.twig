@@ -1,0 +1,16 @@
+{% extends "_resources/layouts/default.twig" %}
+
+
+{% block content %}
+    <section>
+        <div class="hero">
+            <h1 class="logo glitch has-text-centered">nzt</h1>
+        </div>
+    </section>
+    <section class="section">
+        {% include "_resources/partials/services.twig" %}
+    </section>
+    <section>
+        {%  include "_resources/partials/aboutUs.twig" %}
+    </section>
+{% endblock %}
