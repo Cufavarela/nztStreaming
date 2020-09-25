@@ -7,4 +7,5 @@ const homeSwiper = new Swiper('#homeSlider', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     }
-})
+});
+
