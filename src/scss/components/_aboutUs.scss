@@ -15,6 +15,8 @@
 
             span {
                 color: #0675CC;
+                transition: ease-in-out;
+                animation: glitch2 1s infinite;
             }
         }
 
