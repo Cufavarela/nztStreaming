@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Street Cred';
+    src: url('StreetCred-Regular.woff2') format('woff2'),
+        url('StreetCred-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
