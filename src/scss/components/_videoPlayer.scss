@@ -1,0 +1,24 @@
+.player-wrapper {
+    padding: 20px;
+}
+
+    .botonVolver {
+        margin-bottom: 20px;
+        text-align: center;
+
+        a {
+            color: black;
+
+            span {
+                margin-right: 2px;
+                display: block;
+            }
+
+            &:hover {
+                color: red;
+                span {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }

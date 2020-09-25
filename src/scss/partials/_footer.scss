@@ -1,5 +1,63 @@
-footer {
-    p {
-        color: #fff;
+.footer-wrapper {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    background-color: #424242;
+    height: 200px;
+    overflow: hidden;
+
+    a {
+        color: white;
+        &:hover {
+            color: lightblue;
+        }
+    }
+
+
+    .mapa {
+        clip-path: circle(65.2% at 35% 48%);
+        position: relative;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            position: absolute;
+            top: -120px;
+        }
+
+
+    }
+
+    .footer-data {
+        text-align: left;
+        color: white;
+        margin: auto 0px;
+
+        h3{
+            margin: 20px;
+            font-size: 1rem;
+            letter-spacing: .2rem;
+
+            span{
+                margin-right: 8px;
+            }
+        }
+    }
+}
+
+.sign {
+    position: absolute;
+    bottom: -1450px;
+    right: 15px;
+    font-size: .7rem;
+    letter-spacing: .05rem;
+
+    a{
+        color: #9b9b9b;
+
+        &:hover {
+            b {
+                color: white;
+            }
+        }
     }
 }

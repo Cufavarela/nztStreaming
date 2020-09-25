@@ -3,9 +3,7 @@
 
 {% block content %}
     <section>
-        <div class="hero">
-            <h1 class="logo glitch has-text-centered">nzt</h1>
-        </div>
+        {% include "_resources/partials/hero.twig" %}
     </section>
     <section class="section">
         {% include "_resources/partials/services.twig" %}
@@ -13,4 +11,5 @@
     <section>
         {%  include "_resources/partials/aboutUs.twig" %}
     </section>
+    {%  include "_resources/partials/footer.twig" %}
 {% endblock %}
