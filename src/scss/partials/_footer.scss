@@ -46,19 +46,23 @@
     }
 }
 
-.sign {
-    position: absolute;
-    bottom: -1450px;
-    right: 15px;
-    font-size: .7rem;
-    letter-spacing: .05rem;
+footer {
+    position: relative;
 
-    a{
-        color: #9b9b9b;
+    .sign {
+        position: absolute;
+        bottom: 10px;
+        right: 15px;
+        font-size: .7rem;
+        letter-spacing: .05rem;
 
-        &:hover {
-            b {
-                color: white;
+        a{
+            color: #9b9b9b;
+
+            &:hover {
+                b {
+                    color: white;
+                }
             }
         }
     }
@@ -115,11 +119,6 @@
             }
         }
     }
-    .sign {
-        position: absolute;
-        bottom: -2596;
-        right: 15px;
-    }
 }
 
 @media (min-width: 701px) and (max-width: 1000px) {
@@ -133,10 +132,4 @@
             }
         }
     }
-    .sign {
-        position: absolute;
-        bottom: -1430;
-        right: 15px;
-    }
-
 }
