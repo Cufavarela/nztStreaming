@@ -93,10 +93,12 @@ $colors: #040ABF, #0644D6, #0675CC;
 
 @media (max-width: 500px) {
     .services-wrapper{
-        grid-template-columns: 1fr;
-        grid-auto-rows: 1fr;
+        display: flex;
+        flex-direction: column;
 
         .img-service {
+            height: 150px;
+            box-shadow: red 2px 2px, blue -2px -2px;
 
             &.flecha {
 
@@ -110,13 +112,30 @@ $colors: #040ABF, #0644D6, #0675CC;
                     }
                 }
             }
+            &.img-streaming {
+                order: 2;
+            }
+            &.img-recording {
+                order: 4;
+            }
+            &.img-postpo {
+                order: 6;
+            }
         }
 
         .data-service {
-            background-image: url("../../images/hero.jpg");
-            color: white;
+            color: black;
             background-size: cover;
             text-shadow: black 1px;
+            &.streaming {
+                order: 1;
+            }
+            &.recording {
+                order: 3;
+            }
+            &.postpo {
+                order: 5;
+            }
             h2{
                 font-size: 2rem;
             }
