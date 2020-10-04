@@ -21,22 +21,20 @@
 
 <body>
 
-    <section>
-        <div class="hero">
-            <a href="streaming.html">
-                <h1 class="logo glitch has-text-centered">nzt</h1>
-            </a>
-        </div>
-        <div class="player-container">
-            <div class="botonVolver">
-                <a href="index.html"><span>👈</span>Volver</a>
-            </div>
-            <div class="player-wrapper res-16by9">
-                <iframe src="https://vimeo.com/event/307153/embed" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-            </div>
-        </div>
-
-    </section>
+    <div class="hero">
+        <a href="streaming.html">
+            <h1 class="logo glitch has-text-centered">nzt</h1>
+        </a>
+    </div>
+    <div class="form-container">
+        <form class="form">
+            <label for="Email">Nombre</label>
+            <input type="email" id="Email" aria-describedby="emailHelp">
+            <label for="Password">Password</label>
+            <input type="password" id="Password">
+            <button type="submit">Ingresar</button>
+        </form>
+    </div>
     <!-- Scripts -->
     <script src="/js/app.min.js"></script>
 </body>
