@@ -38,3 +38,12 @@
     }
 }
 
+@media (min-width: 320px) and (max-width: 390px) {
+    .hero {
+        height: 40vh;
+    }
+
+    .logo {
+        font-size: 8rem;
+    }
+}
